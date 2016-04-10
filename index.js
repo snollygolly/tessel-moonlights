@@ -59,7 +59,6 @@ infrared.on("data", function(data) {
 	const now = Date.now();
 	const code = data.toJSON().data;
 	console.log(`Received RX Data: ${data.toString("hex").length}`);
-	console.log(code);
 	if (code.length < 10) {
 		// not sure what this is, I don't want it though
 		console.log("Discarding...");
