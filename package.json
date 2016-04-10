@@ -4,17 +4,19 @@
   "description": "A project to use the Tessel to control battery powered Moonlights.",
   "main": "index.js",
   "scripts": {
-		"start": "t2 run index.js",
+    "start": "t2 run --full index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "https://github.com/snollygolly/tessel-moonlights",
   "keywords": [
     "Tessel",
-		"Moonlights"
+    "Moonlights"
   ],
   "license": "GPL-3.0",
   "readme": "https://github.com/snollygolly/tessel-moonlights#readme",
   "dependencies": {
+    "bluebird": "^3.3.4",
+    "co": "^4.6.0",
     "ir-attx4": "^0.2.9"
   }
 }
